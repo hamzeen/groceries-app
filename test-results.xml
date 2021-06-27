@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 91.0.4472 (Mac OS X 10.15.7)" package="" timestamp="2021-06-27T10:58:51" id="0" hostname="FVFWW2GYHV2H" tests="6" errors="0" failures="0" time="0.315">
+<testsuite name="HeadlessChrome 91.0.4472 (Mac OS X 10.15.7)" package="" timestamp="2021-06-27T17:08:16" id="0" hostname="FVFWW2GYHV2H" tests="6" errors="0" failures="0" time="0.3">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4472.114 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should create the app" time="0.066" classname="AppComponent"/>
-  <testcase name="AppComponent should check if the app title is present" time="0.033" classname="AppComponent"/>
-  <testcase name="GroceryDetailComponent should create component" time="0.059" classname="GroceryDetailComponent"/>
-  <testcase name="GrocerySearchComponent should create component" time="0.065" classname="GrocerySearchComponent"/>
-  <testcase name="GrocerySearchComponent should perform a search when the search criteria is new" time="0.049" classname="GrocerySearchComponent"/>
-  <testcase name="GrocerySearchComponent should not perform a new search when search criteria is not new" time="0.043" classname="GrocerySearchComponent"/>
+  <testcase name="AppComponent should create the app" time="0.06" classname="AppComponent"/>
+  <testcase name="AppComponent should check if the app title is present" time="0.037" classname="AppComponent"/>
+  <testcase name="GroceryDetailComponent should create component" time="0.058" classname="GroceryDetailComponent"/>
+  <testcase name="GrocerySearchComponent should create component" time="0.06" classname="GrocerySearchComponent"/>
+  <testcase name="GrocerySearchComponent should perform a search when the search criteria is new" time="0.05" classname="GrocerySearchComponent"/>
+  <testcase name="GrocerySearchComponent should not perform a new search when search criteria is not new" time="0.035" classname="GrocerySearchComponent"/>
   <system-out>
     <![CDATA[
 ]]>
