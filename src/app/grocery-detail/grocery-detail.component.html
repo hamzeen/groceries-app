@@ -1,0 +1,82 @@
+
+
+<div class="breadcrumb">
+  <span class="badge-breadcrumb">&nbsp;you are here&nbsp;</span>
+  <li class="breadcrumb-item"><a href='/grocery-search'>Home</a></li>
+  <li class="breadcrumb-item">Grocery Detail</li>
+</div>
+
+<div id="timeline-containter" class="row">
+
+  <div class="col-12 col-lg-9">
+    <h1>&nbsp;</h1>
+
+    <!-- unauthorised //-->
+    <div *ngIf="!groceryDetail">
+
+      <p class="notification">
+        You haven't selected any grocery to view its detail.
+        Please consider visiting our <a href='/'>landing page</a> to make selection.</p>
+    </div>
+
+
+    <!-- a user has been selected //-->
+    <div *ngIf="groceryDetail">
+      <!-- {{groceryDetail | json}}<br/>//-->
+
+      <div class="column">
+
+        <!-- Post-->
+        <div class="post-module hover">
+          <!-- Thumbnail-->
+          <div class="thumbnail">
+            <div class="date">
+              <div class="site-title">{{groceryDetail.name}}</div>
+            </div>
+          </div>
+          <!-- Post Content-->
+          <div class="post-content">
+            <div *ngIf="groceryDetail.images" class="category">Photos</div>
+
+            <h1 class="title">Overview</h1>
+            <p class="description">{{groceryDetail.description}}</p>
+            <br/>
+
+            <!-- additional info in an optional field in the Grocery interface //-->
+            <div *ngIf="groceryDetail.additionalInformation">
+              <h1 class="title">Nutrition Facts</h1>
+              <h2 class="notification sub_title">{{groceryDetail.additionalInformation}}</h2>
+            </div>
+
+            <!-- images are also an optional property in our Grocery interface //-->
+            <div *ngIf="groceryDetail.images">
+
+              <h1 class="title">Photo Gallery</h1>
+              <div class="gallery">
+                <img class="photo-item"
+                     src="{{url}}"
+                     *ngFor="let url of groceryDetail.images; let idx = index">
+              </div>
+            </div><!-- end of grocery detail gallery //-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-12 col-lg-3">
+    <div class="sidebar">
+      <div class="about-me">
+        <h2>About</h2>
+
+        <p>
+          Our company is a wholesale distributor of organic produce located in
+          Hoofddorp, The Netherlands</p>
+      </div>
+
+      <div class="recent-posts"></div>
+    </div>
+  </div>
+</div>
