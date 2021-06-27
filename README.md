@@ -22,11 +22,11 @@ you can download & install it from [here](https://nodejs.org/en/download).
 
 ## Design Decisions & UI concerns
 * The entire project was done with a `mobile-first` design approach.
-* The grocery list page uses query params. It allows the last search term to be preserved on browser history. 
-* This ensures the last filter criteira would be available for the user when s/he returns back to search view from details views.
+* The grocery list page uses `query params`. It allows the last search term to be preserved on browser history. 
+* This ensures the last **filter criteira would be intact for the user when s/he returns back to search view from details view**.
 * The testing framework, [Jasmine](https://jasmine.github.io) has been employed for BDD. 
 * Tests have been written to cover all the components.
-* The project follows SOLID principles, DRY
+* The project follows `SOLID principles`, `DRY`
 
 
 ## Screens
