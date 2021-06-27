@@ -20,7 +20,7 @@ Please skip this section if you already have Node.js. If this is not the case, p
 * ```npm start```
 * browse: <http://localhost:4200>
 * NOTE: Please make sure you have NodeJS installed your machine. If this not the case, 
-* you can download & install it from [here](https://nodejs.org/en/download).
+you can download & install it from [here](https://nodejs.org/en/download).
 
 
 ## Front-end routes
