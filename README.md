@@ -1,7 +1,6 @@
 # groceries app - frontend
 This repo holds the front-end code for a simple groceries app. It is written in Angular. 
-You can preview it [here](https://hamzeen.github.io/groceries-app). 
-Please continue to the next section if you need to set it up locally in your machine.
+You can preview it [here](https://hamzeen.github.io/groceries-app). \nPlease continue to the next section if you need to set it up locally in your machine.
 
 ## Pre-Requisites ##
 Please skip this section if you already have Node.js. If this is not the case, please [download](https://nodejs.org/en/download) and install Node.JS.
