@@ -4,7 +4,7 @@ You can preview it [here](https://hamzeen.github.io/groceries-app).
 Please continue to the next section if you need to set it up locally in your machine.
 
 
-## Getting started
+## Getting Started
 
 NOTE: Please make sure you have NodeJS installed your machine. If this not the case, 
 you can download & install it from [here](https://nodejs.org/en/download).
@@ -20,7 +20,7 @@ you can download & install it from [here](https://nodejs.org/en/download).
 * Grocery Details: <http://localhost:4200/#/grocery-detail>
 
 
-## Design Decisions & UI concerns
+## Design Decisions & UI Concerns
 * The entire project was done with a `mobile-first` design approach.
 * The grocery list page uses `query params`. It allows the last search term to be preserved on browser history. 
 * This ensures the last **filter criteira would be intact when the user returns back to ListView from DetailsView**.
