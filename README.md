@@ -24,7 +24,7 @@ simply, <http://localhost:4200/#/admin>
 
 # Designs Deicsions and other concerns
 * The entire project was done with a `mobile-first` design approach.
-* Unit tests have been written to cover all the components using [Jasmine](https://jasmine.github.io) testing framework.
+* The testing framework, [Jasmine](https://jasmine.github.io) has been employed for BDD. Tests have been written to cover all the components.
 
 
 
