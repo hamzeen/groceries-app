@@ -1,4 +1,4 @@
-# fruit search app - frontend
+# groceries app - frontend
 
 ## Setup
 
