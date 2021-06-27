@@ -72,7 +72,9 @@ export class GrocerySearchComponent implements OnInit {
 
       this.filteredFruits = filtered;
       this.lastSearch = criteria;
+      return true;
     }
+    return false;
   }
 
 }
