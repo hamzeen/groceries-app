@@ -12,7 +12,7 @@ you can download & install it from [here](https://nodejs.org/en/download).
 * ```npm install```
 * ```npm start```
 * browse: <http://localhost:4200>
-* unit tests: ```npm run test```
+* unit tests: ```npm test```
 
 
 ## frontend routes
