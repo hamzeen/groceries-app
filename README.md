@@ -15,36 +15,6 @@ Please skip this section if you already have Node.js. If this is not the case, p
 
 
 
-# performance review app
-This repo holds 2 projects, front-end & backend code for the sample performance review app.
-The front-end is written in Angular. The backend is a Node.js project which runs on Express.js middleware. 
-MongoDB is used for managing data of this app. It could be easily moved to a 
-popular RDBMS (ex: MySQL) as the Angular app is totally independent of the 
-tech stack used for the backend. The front-end consumes REST APIs.
-
-
-The entire project was done with a `mobile-first` design approach.
-Angular `AuthGuards` are used to protect routes that require authentication.
-`JWT` tokens are used for authentication. **Passwords** are `hashed` before they are inserted to the DB.
-
-> For the most part the project uses actual service calls (no service returns mock data) & 
-real data coming from the DB. The only feature which doesn't employ actual api call is the 
-updates to performance reviews.
-
-Instructions for setting up the project can be found below. 
-
-
-
-
-## Running backend
-* install dependencies:
-    ```npm install```
-* start backend server:
-    ```npm run dev```
-* confirm if the backend is running: 
-    * navigate to: <http://localhost:4201/api/v1/>
-    * if it works, you will see: `api ver 1.0.0`
-
 ## Running Front-End
 * ```npm install```
 * ```npm start```
@@ -60,31 +30,18 @@ Instructions for setting up the project can be found below.
 simply, <http://localhost:4200/#/admin>
 * Above route will lead to following route to create/assign new performance reviews for a selected user: <http://localhost:4200/#/dashboard/reviews>
 
-## API end-points
-* [GET]  shows api version: <http://localhost:4201/api/v1/>
-* [GET]  returns employees: <http://localhost:4201/api/v1/users>
-* [GET]  returns reviews for user with `id: 1` <http://localhost:4201/api/v1/reviews?id=1>
-* [POST] creates a new user: <http://localhost:4201/api/v1/users>
-    * payload: `{"name":"some_username","password":"some_secret"}`
 
-## MongoDB CLI commands
-```
-# use this command to be able to invoke apis from front-end
-use chocodb
 
-# check this after creating employees/reviews
-show collections
+The entire project was done with a `mobile-first` design approach.
+Angular `AuthGuards` are used to protect routes that require authentication.
+`JWT` tokens are used for authentication. **Passwords** are `hashed` before they are inserted to the DB.
 
-# view all doucments/records in a collection
-db.users.find()
-db.reviews.find()
+> For the most part the project uses actual service calls (no service returns mock data) & 
+real data coming from the DB. The only feature which doesn't employ actual api call is the 
+updates to performance reviews.
 
-# WARING! removes all records
-db.reviews.remove({})
+Instructions for setting up the project can be found below. 
 
-# WARNING! drops a collection
-db.reviews.drop()
-```
 
 ## Screens
 
