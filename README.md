@@ -22,41 +22,15 @@ simply, <http://localhost:4200/#/admin>
 * Above route will lead to following route to create/assign new performance reviews for a selected user: <http://localhost:4200/#/dashboard/reviews>
 
 
+# Designs Deicsions and other concerns
+* The entire project was done with a `mobile-first` design approach.
+* Unit tests have been written to cover all the components using [Jasmine](https://jasmine.github.io) testing framework.
 
-The entire project was done with a `mobile-first` design approach.
-Angular `AuthGuards` are used to protect routes that require authentication.
-`JWT` tokens are used for authentication. **Passwords** are `hashed` before they are inserted to the DB.
-
-> For the most part the project uses actual service calls (no service returns mock data) & 
-real data coming from the DB. The only feature which doesn't employ actual api call is the 
-updates to performance reviews.
-
-Instructions for setting up the project can be found below. 
 
 
 ## Screens
-
 * landing page for employees
 ![employee landing](https://raw.githubusercontent.com/hamzeen/FullStackEngineerChallenge/master/screenshots/003_landing_page_employees.png)
-
-* admin dashboard: managing employees
-![dashboard manage employees](https://raw.githubusercontent.com/hamzeen/FullStackEngineerChallenge/master/screenshots/004_dashboard_admin.png)
-
-
-## Improvements
-* introduce user `role` in `JWT payload`. Then it could used to distinguish employees and admin. 
-Currently this is done by looking at the username, `admin`. 
-This will help if we decide to have multiple admin users.
-* Create a common component to display error messages. Backend errors could be translated into friendly messages & shown in UI.
-* The above component could be designed to accept:
-    * `severity levels`: (ex: `info, warning, success, error`) & 
-    * `Soft` or `Hard` notifications. Soft would disappear on its own; Hard notifications needs to be closed by user.
-    * example: <https://hamzeen.github.io/ngToast/>
-* following types of testing needs to be added, `unit tests`, `api tests` & `integration`/UI automation `tests`.
-    * Some Recommendations: 
-        * unit tests: Jasmine
-        * api tests: postman scripts
-        * UI Automation/Integration tests: Codecept / Protractor
 
 
 ## CREDITS ##
