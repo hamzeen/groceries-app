@@ -1,8 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {ActivatedRoute, Router} from '@angular/router';
-import {AppStateService} from '../shared/services/appstate.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AppStateService } from '../shared/services/appstate.service';
 import { groceries } from '../shared/data/groceries';
 import { Grocery } from '../shared/interfaces/grocery';
 
@@ -42,7 +42,7 @@ export class GrocerySearchComponent implements OnInit {
     });
   }
 
-  onClickDetail(selected: Grocery) {
+  onClickDetail(selected: Grocery): void {
 
     // set the grocery selection on state service
     this.stateService.setGroceryDetail(selected);
@@ -52,22 +52,23 @@ export class GrocerySearchComponent implements OnInit {
   }
 
 
-  createForm() {
+  createForm(): void {
     const formFields = { filter: '' };
     this.formSearch = this.formBuilder.group(formFields);
 
     // observe changes on search input field
     this.formSearch.controls['filter']
       .valueChanges
-      .subscribe((value) => {
+      .subscribe((value: string) => {
         const tempFilter = value.trim().toLocaleLowerCase();
         this.filterFruits(tempFilter);
-        // update query param so that the search term can be preserved
+
+        // update query param so that user will have the last search from history
         this.router.navigate([], { queryParams: { filter: tempFilter } });
       });
   }
 
-  onSubmit() {
+  onSubmit(): void {
     // markFormTouched(this.formContact);
 
     const tempFilter = this.formSearch.value
@@ -75,7 +76,7 @@ export class GrocerySearchComponent implements OnInit {
     this.filterFruits(tempFilter);
   }
 
-  filterFruits(filter: string) {
+  filterFruits(filter: string): boolean {
 
     if (this.lastSearch !== filter) {
       this.filteredFruits = this.groceries.filter(el =>
