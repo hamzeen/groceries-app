@@ -15,11 +15,8 @@ you can download & install it from [here](https://nodejs.org/en/download).
 
 
 ## Front-end routes
-* Login Page for Users: <http://localhost:4200/#/login>
-* Landing page for Employees: <http://localhost:4200/#/landing>
-* Admin Dashboard: <http://localhost:4200/#/dashboard/employees> or 
-simply, <http://localhost:4200/#/admin>
-* Above route will lead to following route to create/assign new performance reviews for a selected user: <http://localhost:4200/#/dashboard/reviews>
+* Grocery List / Search (also the landing page): <http://localhost:4200> or <http://localhost:4200/#/grocery-search>
+* Grocery Details: <http://localhost:4200/#/grocery-detail>
 
 
 # Designs Deicsions and other concerns
