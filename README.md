@@ -69,7 +69,6 @@ This will help if we decide to have multiple admin users.
 
 
 ## CREDITS ##
-Photos used in this repo are all obtained from [unsplash](http://unsplash.com).  
-I hereby give all credits to their respective owners on unsplash.com
+Photos used in this repo are all obtained from [unsplash](http://unsplash.com). I hereby give all credits to their respective owners on unsplash.com
 
 
