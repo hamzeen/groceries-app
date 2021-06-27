@@ -39,7 +39,7 @@ you can download & install it from [here](https://nodejs.org/en/download).
 
 
 * grocery detail portrait
-![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/main/screens/003_detail_portrait.jpg)
+![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/main/screens/004_detail_portrait.jpg)
 
 
 
