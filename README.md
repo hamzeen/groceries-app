@@ -4,7 +4,7 @@ You can preview it [here](https://hamzeen.github.io/groceries-app).
 Please continue to the next section if you need to set it up locally in your machine.
 
 
-## Running Front-End
+## Getting started
 
 NOTE: Please make sure you have NodeJS installed your machine. If this not the case, 
 you can download & install it from [here](https://nodejs.org/en/download).
@@ -12,9 +12,10 @@ you can download & install it from [here](https://nodejs.org/en/download).
 * ```npm install```
 * ```npm start```
 * browse: <http://localhost:4200>
+* unit tests: ```npm run test```
 
 
-## Front-end routes
+## frontend routes
 * Grocery List / Search (also the landing page): <http://localhost:4200> or 
 * You can also directly enter this url: <http://localhost:4200/#/grocery-search>
 * Grocery Details: <http://localhost:4200/#/grocery-detail>
