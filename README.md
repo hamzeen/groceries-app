@@ -15,7 +15,8 @@ you can download & install it from [here](https://nodejs.org/en/download).
 
 
 ## Front-end routes
-* Grocery List / Search (also the landing page): <http://localhost:4200> or <http://localhost:4200/#/grocery-search>
+* Grocery List / Search (also the landing page): <http://localhost:4200> or 
+* You can also directly enter this url: <http://localhost:4200/#/grocery-search>
 * Grocery Details: <http://localhost:4200/#/grocery-detail>
 
 
