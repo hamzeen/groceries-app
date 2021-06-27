@@ -28,8 +28,19 @@ you can download & install it from [here](https://nodejs.org/en/download).
 
 
 ## Screens
-* landing page for employees
-![employee landing](https://raw.githubusercontent.com/hamzeen/FullStackEngineerChallenge/master/screenshots/003_landing_page_employees.png)
+* grocery list
+![landing page](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/001_landing.jpg)
+
+* filter groceries
+![filter groceries](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/002_search.jpg)
+
+* grocery detail landscape
+![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/003_detail_landscape.jpg)
+
+
+* grocery detail portrait
+![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/003_detail_portrait.jpg)
+
 
 
 ## CREDITS ##
