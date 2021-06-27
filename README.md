@@ -20,7 +20,7 @@ you can download & install it from [here](https://nodejs.org/en/download).
 * Grocery Details: <http://localhost:4200/#/grocery-detail>
 
 
-# Designs Deicsions and other concerns
+# Design Decisions & UI concerns
 * The entire project was done with a `mobile-first` design approach.
 * The testing framework, [Jasmine](https://jasmine.github.io) has been employed for BDD. 
 * Tests have been written to cover all the components.
