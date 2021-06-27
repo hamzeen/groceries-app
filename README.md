@@ -27,7 +27,7 @@ you can download & install it from [here](https://nodejs.org/en/download).
 * [Jasmine](https://jasmine.github.io) testing framework has been employed for `BDD`. 
 * Tests have been written to cover all the components.
 * The project follows `SOLID principles`, `DRY`
-* Since JavaScript is `dynamically-typed`, this project uses TypeScript to benefit from `static-typing` & add syntactic sugar.
+* Since javascript is `dynamically-typed`, this project uses TypeScript to benefit from `static-typing` & add syntactic sugar.
 
 
 ## Screens
