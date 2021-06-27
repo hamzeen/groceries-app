@@ -1,14 +1,10 @@
 import { Component, OnInit} from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import { markFormTouched } from '../shared/util/utilities';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AppStateService} from '../shared/services/appstate.service';
 import { groceries } from '../shared/data/groceries';
-import {Grocery} from '../shared/interfaces/grocery';
-import {debounceTime} from 'rxjs/operators';
-import {distinctUntilChanged} from 'rxjs/internal/operators/distinctUntilChanged';
-import {tap} from 'rxjs/internal/operators/tap';
+import { Grocery } from '../shared/interfaces/grocery';
 
 @Component({
   selector: 'app-grocery-search',
@@ -18,7 +14,7 @@ import {tap} from 'rxjs/internal/operators/tap';
 })
 export class GrocerySearchComponent implements OnInit {
 
-  public formContact: FormGroup;
+  public formSearch: FormGroup;
   private lastSearch = '';
   private filteredFruits: Grocery[];
   private groceries: Grocery[] = groceries;
@@ -40,13 +36,14 @@ export class GrocerySearchComponent implements OnInit {
       const filter = params['filter'];
       if (filter && filter !== '') {
         // perform search ..
-        this.formContact.controls['criteria'].setValue(filter);
+        this.formSearch.controls['filter'].setValue(filter);
         this.filterFruits(filter);
       }
     });
   }
 
-  onReviewsByEmployee(selected: Grocery) {
+  onClickDetail(selected: Grocery) {
+
     // set the grocery selection on state service
     this.stateService.setGroceryDetail(selected);
 
@@ -56,38 +53,37 @@ export class GrocerySearchComponent implements OnInit {
 
 
   createForm() {
-    const formFields = { criteria: '' };
-    this.formContact = this.formBuilder.group(formFields);
+    const formFields = { filter: '' };
+    this.formSearch = this.formBuilder.group(formFields);
 
     // observe changes on search input field
-    this.formContact.controls['criteria']
+    this.formSearch.controls['filter']
       .valueChanges
       .subscribe((value) => {
-        const tempCriteria = value.trim().toLocaleLowerCase();
-        this.filterFruits(tempCriteria);
-        this.router.navigate([], { queryParams: { filter: tempCriteria } });
+        const tempFilter = value.trim().toLocaleLowerCase();
+        this.filterFruits(tempFilter);
+        // update query param so that the search term can be preserved
+        this.router.navigate([], { queryParams: { filter: tempFilter } });
       });
   }
 
   onSubmit() {
     // markFormTouched(this.formContact);
 
-    const tempCriteria = this.formContact.value
-      .criteria.trim().toLocaleLowerCase();
-    this.filterFruits(tempCriteria);
+    const tempFilter = this.formSearch.value
+      .filter.trim().toLocaleLowerCase();
+    this.filterFruits(tempFilter);
   }
 
-  filterFruits(criteria: string) {
+  filterFruits(filter: string) {
 
-    if (this.lastSearch !== criteria) {
-
-      const filtered = this.groceries.filter(el =>
-        el.name.toLocaleLowerCase().indexOf(criteria) > -1);
-
-      this.filteredFruits = filtered;
-      this.lastSearch = criteria;
+    if (this.lastSearch !== filter) {
+      this.filteredFruits = this.groceries.filter(el =>
+          el.name.toLocaleLowerCase().indexOf(filter) > -1);
+      this.lastSearch = filter;
       return true;
     }
+
     return false;
   }
 

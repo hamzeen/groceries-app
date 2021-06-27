@@ -10,10 +10,10 @@
   <div>
 
     <!-- Form: search fruit(s) //-->
-    <form [formGroup]="formContact" (ngSubmit)="onSubmit()" class="well">
+    <form [formGroup]="formSearch" (ngSubmit)="onSubmit()" class="well">
       <div class="row">
         <div class="form-group col-md-9">
-          <input type="text" formControlName="criteria" class="form-control" id="criteria" autocomplete="on"
+          <input type="text" formControlName="filter" class="form-control" id="filter" autocomplete="on"
              placeholder="search fruit (ex: 'apple')">
         </div>
         <div class="form-group col-md-3">
@@ -31,14 +31,14 @@
   <div class="row">
     <div class="col-12 col-md-12 col-xl-12">
 
-      <h5>Fruits List</h5>
+      <h5>Grocery List</h5>
 
       <div *ngIf="filteredFruits.length > 0" class="accordion">
         <div *ngFor="let grocery of filteredFruits; let i = index" class="accordion__item">
           <div style="display: flex" class="accordion-header ">
             <div class="grocery-id" style="flex: 2;"># {{i+1}}</div>
             <div style="flex: 5;">{{grocery.name}}</div>
-            <div style="flex: 2;" (click)="onReviewsByEmployee(grocery)">view details</div>
+            <div style="flex: 2;" (click)="onClickDetail(grocery)">view details</div>
           </div>
         </div><!-- end of accordion item -->
       </div><!-- end of accordion -->
