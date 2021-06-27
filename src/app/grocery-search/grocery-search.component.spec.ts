@@ -41,7 +41,7 @@ describe('GrocerySearchComponent', () => {
 
   it('should perform a search when the search criteria is new', () => {
     // by default lastSearch is set to empty string. Hence, following is a new term.
-    const res = component.filterFruits('apple');
+    const res = component.filterFruits('appl');
     expect(res).toEqual(true);
   });
 

@@ -2,10 +2,13 @@ import { Component, OnInit} from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { markFormTouched } from '../shared/util/utilities';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {AppStateService} from '../shared/services/appstate.service';
 import { groceries } from '../shared/data/groceries';
 import {Grocery} from '../shared/interfaces/grocery';
+import {debounceTime} from 'rxjs/operators';
+import {distinctUntilChanged} from 'rxjs/internal/operators/distinctUntilChanged';
+import {tap} from 'rxjs/internal/operators/tap';
 
 @Component({
   selector: 'app-grocery-search',
@@ -24,13 +27,23 @@ export class GrocerySearchComponent implements OnInit {
     private http: HttpClient,
     private stateService: AppStateService,
     private readonly formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
     this.createForm();
   }
 
   ngOnInit() {
     this.filteredFruits = this.groceries;
+
+    this.activatedRoute.queryParams.subscribe(params => {
+      const filter = params['filter'];
+      if (filter && filter !== '') {
+        // perform search ..
+        this.formContact.controls['criteria'].setValue(filter);
+        this.filterFruits(filter);
+      }
+    });
   }
 
   onReviewsByEmployee(selected: Grocery) {
@@ -52,6 +65,7 @@ export class GrocerySearchComponent implements OnInit {
       .subscribe((value) => {
         const tempCriteria = value.trim().toLocaleLowerCase();
         this.filterFruits(tempCriteria);
+        this.router.navigate([], { queryParams: { filter: tempCriteria } });
       });
   }
 
