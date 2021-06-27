@@ -3,25 +3,15 @@ This repo holds the front-end code for a simple groceries app. It is written in 
 You can preview it [here](https://hamzeen.github.io/groceries-app).  
 Please continue to the next section if you need to set it up locally in your machine.
 
-## Pre-Requisites ##
-Please skip this section if you already have Node.js.  
-If this is not the case, please [download](https://nodejs.org/en/download) and install Node.JS.
-
-
-## Setup
-
-1. `npm install` to install dependencies
-2. `npm start` starts the app
-3.  see the magic at: <http://localhost:4200/>
-
-
 
 ## Running Front-End
+
+NOTE: Please make sure you have NodeJS installed your machine. If this not the case, 
+you can download & install it from [here](https://nodejs.org/en/download).
+
 * ```npm install```
 * ```npm start```
 * browse: <http://localhost:4200>
-* NOTE: Please make sure you have NodeJS installed your machine. If this not the case, 
-you can download & install it from [here](https://nodejs.org/en/download).
 
 
 ## Front-end routes
