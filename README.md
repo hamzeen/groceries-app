@@ -19,9 +19,9 @@ Please skip this section if you already have Node.js. If this is not the case, p
 * ```npm install```
 * ```npm start```
 * browse: <http://localhost:4200>
-* if you reached this point, you can now create the admin user:
-    * navigate to: <http://localhost:4200/#/dashboard/employees>
-    * [IMPORTANT!] create a user named `admin`
+* NOTE: Please make sure you have NodeJS installed your machine. If this not the case, 
+* you can download & install it from [here](https://nodejs.org/en/download).
+
 
 ## Front-end routes
 * Login Page for Users: <http://localhost:4200/#/login>
