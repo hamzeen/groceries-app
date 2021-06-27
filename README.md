@@ -24,7 +24,7 @@ you can download & install it from [here](https://nodejs.org/en/download).
 * The entire project was done with a `mobile-first` design approach.
 * The grocery list page uses `query params`. It allows the last search term to be preserved on browser history. 
 * This ensures the last **filter criteira would be intact when the user returns back to ListView from DetailsView**.
-* The testing framework, [Jasmine](https://jasmine.github.io) has been employed for BDD. 
+* The testing framework, [Jasmine](https://jasmine.github.io) has been employed for `BDD`. 
 * Tests have been written to cover all the components.
 * The project follows `SOLID principles`, `DRY`
 
