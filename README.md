@@ -29,17 +29,17 @@ you can download & install it from [here](https://nodejs.org/en/download).
 
 ## Screens
 * grocery list
-![landing page](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/001_landing.jpg)
+![landing page](https://raw.githubusercontent.com/hamzeen/groceries-app/main/screens/001_landing.jpg)
 
 * filter groceries
-![filter groceries](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/002_search.jpg)
+![filter groceries](https://raw.githubusercontent.com/hamzeen/groceries-app/main/screens/002_search.jpg)
 
 * grocery detail landscape
-![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/003_detail_landscape.jpg)
+![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/main/screens/003_detail_landscape.jpg)
 
 
 * grocery detail portrait
-![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/master/screenshots/003_detail_portrait.jpg)
+![grocery detail landscape](https://raw.githubusercontent.com/hamzeen/groceries-app/main/screens/003_detail_portrait.jpg)
 
 
 
