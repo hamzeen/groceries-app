@@ -1,4 +1,11 @@
 # groceries app - frontend
+This repo holds the front-end code for a simple groceries app. It is written in Angular. 
+You can preview it [here](https://hamzeen.github.io/groceries-app). 
+Please continue to the next section if you need to set it up locally in your machine.
+
+## Pre-Requisites ##
+Please skip this section if you already have Node.js. If this is not the case, please [download](https://nodejs.org/en/download) and install Node.JS.
+
 
 ## Setup
 
@@ -27,15 +34,6 @@ updates to performance reviews.
 Instructions for setting up the project can be found below. 
 
 
-## Pre-Requisites ##
-* [**install mongodb**](https://treehouse.github.io/installation-guides/mac/mongo-mac.html)
-* Once you setup MongoDB, start the mongod service & create the DB like so:
-```sh
-# start mongodb
-mongo start
-# create db
-use chocodb
-```
 
 
 ## Running backend
