@@ -69,6 +69,7 @@ This will help if we decide to have multiple admin users.
 
 
 ## CREDITS ##
-Splash image on the app was retreived from [unsplash](http://unsplash.com). 
-All its credits are attributed to the original photographer, [Gio Almonte](https://unsplash.com/@gpenguin).
+Photos used in this repo are all obtained from [unsplash](http://unsplash.com).  
+I hereby give all credits to their respective owners on unsplash.com
+
 
