@@ -18,10 +18,7 @@ module.exports = [[module.i, "/* You can add global styles to this file, and als
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
+
 
 var stylesInDom = {};
 
