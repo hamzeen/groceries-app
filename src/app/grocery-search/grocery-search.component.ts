@@ -30,7 +30,7 @@ export class GrocerySearchComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+
     this.activatedRoute.queryParams.subscribe(params => {
       const filter = params['filter'];
       if (filter && filter !== '') {
