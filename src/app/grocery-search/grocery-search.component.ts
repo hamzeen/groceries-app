@@ -88,7 +88,7 @@ export class GrocerySearchComponent implements OnInit {
     return false;
   }
 
-  getFilteredGroceries() {
+  getFilteredGroceries(): Grocery[] {
     return this.filteredFruits;
   }
 }
