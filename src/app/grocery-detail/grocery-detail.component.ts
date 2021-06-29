@@ -22,7 +22,7 @@ export class GroceryDetailComponent implements OnInit {
     this.renderReviews();
   }
 
-  renderReviews() {
+  renderReviews(): void {
     this.groceryDetail = this.stateService.getGroceryDetail() || null;
   }
 
