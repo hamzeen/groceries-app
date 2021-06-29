@@ -34,7 +34,7 @@
       <h5>Grocery List</h5>
 
       <div *ngIf="filteredFruits.length > 0" class="accordion">
-        <div *ngFor="let grocery of filteredFruits; let i = index" class="accordion__item">
+        <div *ngFor="let grocery of getFilteredGroceries(); let i = index" class="accordion__item">
           <div style="display: flex" class="accordion-header ">
             <div class="grocery-id" style="flex: 2;"># {{i+1}}</div>
             <div style="flex: 5;">{{grocery.name}}</div>
