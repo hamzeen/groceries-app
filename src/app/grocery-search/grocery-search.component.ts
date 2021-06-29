@@ -51,7 +51,6 @@ export class GrocerySearchComponent implements OnInit {
     this.router.navigateByUrl('/grocery-detail');
   }
 
-
   createForm(): void {
     const formFields = { filter: '' };
     this.formSearch = this.formBuilder.group(formFields);
@@ -88,4 +87,7 @@ export class GrocerySearchComponent implements OnInit {
     return false;
   }
 
+  getFilteredGroceries() {
+    return this.filteredFruits;
+  }
 }
