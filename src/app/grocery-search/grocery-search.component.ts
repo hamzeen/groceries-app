@@ -30,14 +30,15 @@ export class GrocerySearchComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.filteredFruits = this.groceries;
-
+    
     this.activatedRoute.queryParams.subscribe(params => {
       const filter = params['filter'];
       if (filter && filter !== '') {
         // perform search ..
         this.formSearch.controls['filter'].setValue(filter);
         this.filterFruits(filter);
+      } else {
+        this.filteredFruits = this.groceries;
       }
     });
   }
