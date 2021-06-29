@@ -14,7 +14,7 @@ import { Grocery } from '../shared/interfaces/grocery';
 })
 export class GrocerySearchComponent implements OnInit {
 
-  public formSearch: FormGroup;
+  private formSearch: FormGroup;
   private lastSearch = '';
   private filteredFruits: Grocery[];
   private groceries: Grocery[] = groceries;
